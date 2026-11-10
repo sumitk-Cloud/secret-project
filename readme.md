@@ -43,5 +43,36 @@ EC2 (IAM role) -> Secrets Manager -> RDS MySQL (private)
 | Metadata service open to SSRF (IMDSv1) | IMDSv2 enforced |
 | Database publicly reachable | Private RDS, SG-to-SG access only |
 
+### IAM user
+![IAM user](screenshots/img1.png)
+
+### IAM access key
+![ IAM access key](screenshots/img2.png)
+
+### ADD IAM credential 
+![ IAM credential ](screenshots/img3.png)
+
+### RDS creation
+![ RDS creation](screenshots/img4.png)
+
+### file 
+![file ](screenshots/img5.png)
+
+### check ec2
+![check ec2](screenshots/img6.png)
+
+### event history
+![ event history](screenshots/img8.png)
+
+### Identity caller check 
+![Identity caller check ](screenshots/img9.jpeg)
+
+### Output on CLI
+![ Prometheus targets showing monitored servers](screenshots/img10.jpeg)
+
+### Output on webserver
+![Output on webserver](screenshots/img11.jpeg)
+
+
 ## Cleanup
 Delete EC2, RDS, secret, IAM role/instance profile and security groups.
